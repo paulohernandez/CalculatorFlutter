@@ -1,4 +1,4 @@
-import 'package:calculator_flutter/counter/counter.dart';
+import 'package:calculator_flutter/features/home/presentation/home.dart';
 import 'package:calculator_flutter/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +8,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         appBarTheme: AppBarTheme(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -16,7 +17,7 @@ class App extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      home: const HomePage(),
     );
   }
 }
