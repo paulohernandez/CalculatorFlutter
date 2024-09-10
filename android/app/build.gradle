@@ -90,7 +90,7 @@ android {
         development {
             dimension "default"
             applicationIdSuffix ".dev"
-            manifestPlaceholders = [appName: "[DEV] Calculator Flutter"]
+            manifestPlaceholders = [appName: "Calculator"]
         }
     }
 
