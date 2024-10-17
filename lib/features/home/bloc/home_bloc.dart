@@ -19,15 +19,19 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
           emit(state.copyWith(word: '${state.word} ÷ '));
         case Operators.multiplication:
           // emit(state.copyWith(word: '${state.word} x '));
-        emit(state.copyWith(word: 'BALIK KANA\n😭😭😭😭'));
+          emit(state.copyWith(word: 'BALIK KANA\n😭😭😭😭'));
         case Operators.output:
-        emit(state.copyWith(word: 'IMISSU\n🥲😭😭😘'));
+          emit(state.copyWith(word: 'IMISSU\n🥲😭😭😘'));
       }
     });
     on<InputNumber>((event, emit) {
       String? displayNumber;
       if (state.word != null) {
-        displayNumber = state.word;
+        if (state.word == '0') {
+          displayNumber = '';
+        } else {
+          displayNumber = state.word;
+        }
       } else {
         displayNumber = '';
       }
