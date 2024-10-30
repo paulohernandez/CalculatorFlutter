@@ -1,7 +1,5 @@
-import 'package:calculator_flutter/features/home/bloc/home_bloc.dart';
-import 'package:calculator_flutter/features/home/entities/operators.dart';
+import 'package:calculator_flutter/features/home/domain/entities/operators.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ButtonOperator extends StatelessWidget {
   const ButtonOperator({required this.operatorType, super.key});

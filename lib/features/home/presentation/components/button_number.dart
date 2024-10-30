@@ -1,6 +1,4 @@
-import 'package:calculator_flutter/features/home/bloc/home_bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ButtonNumber extends StatelessWidget {
   const ButtonNumber({required this.number, super.key});
@@ -16,7 +14,7 @@ class ButtonNumber extends StatelessWidget {
       ),
       child: FilledButton(
         style: FilledButton.styleFrom(
-          backgroundColor:  const Color(0XFF343434),
+          backgroundColor: const Color(0XFF343434),
         ),
         onPressed: () {},
         child: Text(
