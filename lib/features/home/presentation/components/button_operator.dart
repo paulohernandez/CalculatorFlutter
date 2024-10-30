@@ -18,8 +18,7 @@ class ButtonOperator extends StatelessWidget {
         borderRadius: BorderRadius.circular(100),
       ),
       child: FilledButton(
-        onPressed: () =>
-            context.read<HomeBloc>().add(OtherButtonEvent(operatorType)),
+        onPressed: () {},
         style: FilledButton.styleFrom(
           backgroundColor: const Color(0XFFff9f0a),
         ),

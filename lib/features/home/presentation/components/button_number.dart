@@ -18,7 +18,7 @@ class ButtonNumber extends StatelessWidget {
         style: FilledButton.styleFrom(
           backgroundColor:  const Color(0XFF343434),
         ),
-        onPressed: () => context.read<HomeBloc>().add(InputNumber(number)),
+        onPressed: () {},
         child: Text(
           '$number',
           style: const TextStyle(

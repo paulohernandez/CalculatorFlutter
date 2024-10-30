@@ -88,8 +88,7 @@ class HomePage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(100),
                     ),
                     child: FilledButton(
-                      onPressed: () =>
-                          context.read<HomeBloc>().add(const InputNumber(0)),
+                      onPressed: () {},
                       style: FilledButton.styleFrom(
                         backgroundColor: const Color(0XFF343434),
                       ),
